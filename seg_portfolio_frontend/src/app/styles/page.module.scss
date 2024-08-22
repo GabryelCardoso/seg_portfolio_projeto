@@ -1,0 +1,148 @@
+
+.containerCenter{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--black);
+    background-image: url('../../../public/background.jpg');
+    background-size: cover;
+    
+    
+}
+#logoA{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.login{
+    
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 1.5rem;
+    
+    form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+            
+        
+        
+    }
+
+    form button{
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    span{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: var(--vermelhotemac2);
+        font-weight: 500;
+    }
+}
+
+.containerForm{
+    min-height: 100vh;
+    display: flex;
+    background-image: url('../../../public/background.jpg');
+    background-size: cover;
+    background-color: var(--black);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    .formbase2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        Input{
+            width: 100%;
+        }
+        TextArea{
+            width: 100%;
+        }
+
+        Button{
+            margin-bottom: 16px;
+            width: 100%;
+        }
+
+    
+        
+    }
+    .formbase1{
+       display: flex;
+       justify-content: space-between;
+       
+      
+       Input{
+        width: 49%;
+       }
+    }
+    
+    form{
+        width: 100vh;
+        padding-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+#texto{
+    
+   
+    color: var(--vermelhotemac);
+    text-align: center;
+
+    
+}
+#radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+    
+
+
+    label{
+        color: var(--vermelhotemac);
+    }
+}
+
+
+@media (max-width: 410px) {
+    .login{
+        width: 90%;
+    }
+}
+
+@media (max-width: 555px) {
+    #texto{
+        width: 100%;
+        text-align: center;
+    }
+    .containerForm{
+        Input{
+            font-size: 85%;
+            
+        }
+        Img{
+            width: 60%;
+            height: 50%;
+        }
+        
+        form{
+            width: 80%;
+            height: 70%;
+        }
+    }
+    
+}

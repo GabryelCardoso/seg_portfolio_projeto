@@ -1,0 +1,169 @@
+.containerConta{
+    max-width: 720px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.containerConta h1{
+    color: var(--vermelhotemae);
+    font-size: 2rem;
+}
+
+.containerHeaderConta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+#cabecalho{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    button{
+        background: transparent;
+        border: 0;
+        margin-left: 1rem;
+    }
+}
+
+#addbotao{
+    button{
+        background: #F65E5D;
+        padding: 9px;
+        color: white;
+        border-radius: 7px;
+        font-weight: medium;
+        border: 0;    
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+            background-color: #E54B4A; // Altere para a cor desejada ao passar o mouse
+        }
+    }
+}
+    
+}
+
+.contas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+
+}
+
+
+.conta{
+    display: flex;
+    flex-direction: row;
+    
+    background-color: #f9bcb6;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+        
+}
+.infos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    border: 0;
+    
+    background: transparent;
+    height: 60px;
+    align-items: center;
+    
+    width: 100%;
+
+button{
+    background: transparent;
+    border: 0;
+    margin-right: 0.3rem;
+    
+    transition: transform 0.3s;
+        &:hover{
+            transform: scale(1.2);
+        }
+}
+span{
+    color: var(--vermelhotemae);
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    
+}
+}
+
+.tag{
+    width: 9px;
+    background-color: var(--vermelhotemac);
+    height: 60px;
+    border-radius: 6px 0 0 6px;
+    margin-right: 0.3rem;
+    
+    
+}
+
+@media(max-width: 570px){
+    .containerConta h1{
+        color: var(--vermelhotemae);
+        font-size: 1.5rem;
+    }
+    #cabecalho{
+        button{
+            margin: 0.5rem;
+        }
+    }
+    .containerHeaderConta span{
+        font-size: 0.8rem;
+        
+    }
+    #addbotao{
+        button{
+            
+            font-size: 0.6rem;
+            
+        }
+    }
+    .infos{
+        
+        span{
+            text-align: center;
+            font-size: 11px;
+            margin: 0;
+            padding: 0;
+        }
+        
+    }
+}
+
+@media(max-width: 370px){
+    
+}
+@media(max-width: 370px){
+    .containerConta h1{
+        font-size: 1rem;
+    }
+    .infos{
+        flex-direction: column;
+        height: 70px;
+        span{
+            text-align: center;
+            font-size: 8px;
+            
+        }
+        
+    }
+    .contas{
+        margin: 0.4rem;
+    }
+    .tag{
+        height: 70px;
+    }
+    
+}

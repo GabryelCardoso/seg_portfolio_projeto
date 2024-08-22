@@ -1,0 +1,173 @@
+.containerGeral{
+    background-color: var(--backgroundtema);
+    min-height: 100vh;
+    
+}
+.container{
+    background-color: var(--backgroundtema);
+    max-width: 720px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1{
+    color: var(--vermelhotemae);
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+.containerHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    button{
+        background: transparent;
+        border: 0;
+        margin-left: 1rem;
+    }
+    
+}
+
+.listOreders{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+
+.orderItem{
+    display: flex;
+    flex-direction: row;
+    background-color: #f9bcb6;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+    border-radius: 0.3rem;
+
+    button{
+        border: 0;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        
+        font-size: 1.2rem;
+        font-weight: bold;
+        height: 60px;
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+
+    span{
+        color: var(--vermelhotemae);
+        font-weight: 750;
+    }
+}
+.orderItem:hover{
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+
+.tag{
+    width: 9px;
+    background-color: var(--vermelhotemac);
+    height: 60px;
+    border-radius: 6px 0 0 6px;
+    margin-right: 1rem;
+    
+    
+}
+
+.orderSpans{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+#rightSpan{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#deletebutton{
+    padding-right: 1rem;
+}
+
+@media(max-width: 436px){
+    
+    .container{
+        
+        
+        span{
+            font-size: 1rem;
+        }
+    }
+    .containerHeader h1{
+        font-size: 1.5rem;
+       
+        
+    }
+
+    .tag{
+        
+        height: 45px;
+           
+    }
+    .orderItem{
+        
+    
+        button{
+            
+            height: 45px;
+            
+        }
+    
+        
+    }
+    .orderSpans{
+        display: flex;
+        flex-direction: column;
+        span{
+            font-size: 1rem;
+        }
+        #rightSpan{
+            font-size: 0.8rem;
+        }
+    }
+}
+@media(max-width: 343px){
+    .container{
+        
+        text-align: center;
+        span{
+            font-size: 0.8rem;
+        }
+    }
+    .containerHeader{
+        justify-content: center;
+    }
+    .containerHeader h1{
+        font-size: 1.2rem;
+        
+    }
+    .orderSpans{
+        display: flex;
+        flex-direction: column;
+        span{
+            font-size: 0.8rem;
+        }
+        #rightSpan{
+            font-size: 0.7rem;
+        }
+    }
+    
+}

@@ -1,0 +1,34 @@
+.button{
+    max-width: 600px;
+    background-color: var(--vermelhotemac);
+    border: 0;
+    padding: 0.4rem;
+    color: var(--rosatema2);
+    transition: filter 0.2s;
+
+    &[disabled]{
+        cursor: not-allowed;
+        svg{
+            animation: animate 2s infinite;
+        }
+    }
+
+    &:hover{
+        //Efeito de brilho ao passar o mouse em cima
+        filter: brightness(1.08);
+    }
+}
+
+.buttonText{
+    color: var(--rosatema2);
+}
+
+//animando o icone do login
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
