@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Criar uma migration 'npx prisma migrate dev'
+model User_v {
+  id String @id @default(uuid())
+  nome String
+  email String
+  cpf String
+  telefone String
+  situacao_v String
+  modelo_v String
+  ano_v Int
+  fabricante_v String
+  created_at DateTime? @default(now())
+  
+  @@map("form-v")
+}
+
+model User_cons {
+  id String @id @default(uuid())
+  nome String
+  email String
+  cpf String
+  telefone String
+  valor_credito Float
+  valor_parcela Float 
+  created_at DateTime? @default(now())
+
+  @@map("form-cons")
+}
+
+model User_conv{
+  id String @id @default(uuid())
+  nome String
+  email String
+  cpf String
+  telefone String
+  peso Float
+  altura Float
+  localidade String
+  convenio String
+  hospital_pref String
+  nome_hospital String
+  idade Int
+  pessoa String
+  created_at DateTime? @default(now())
+
+  @@map("form-conv")
+}
+
+model User_seguro{
+  id String @id @default(uuid())
+  nome String
+  email String
+  cpf String
+  telefone String
+  peso Float
+  altura Float
+  profissao String
+  renda Float
+  fumante String
+  created_at DateTime? @default(now())
+
+@@map("form-seguro")
+}
+
+model Users{
+  id String @id @default(uuid())
+  user String
+  senha String
+  adm Boolean
+  created_at DateTime? @default(now())
+  @@map("users")
+}
