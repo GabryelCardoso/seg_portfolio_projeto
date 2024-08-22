@@ -104,7 +104,7 @@ return(
               <span>Administrador: {user.adm ? 'Sim' : 'Não'}</span>
               <span>Criada em: {user.created_at.slice(0, -5)}</span>
               <button onClick={() => {deleteUser(user.id)}}
-              disabled={user.id === usuario.id || usuario.adm === false}>
+              disabled={user.id === usuario.id || usuario.adm === false ||user.user === 'adm'}>
               <FaTrash />
               </button>
               
