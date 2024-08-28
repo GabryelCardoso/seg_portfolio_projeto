@@ -26,7 +26,7 @@ As seguintes credenciais podem ser usadas para acessar a página de dashboard:
 - **Usuário**: adm  
 - **Senha**: 123
 
-(obs: a primeira requisição pode demorar um pouco devido ao tempo de inicialização da hospedagem do backend)
+**⚠️ Importante:** *A primeira requisição pode demorar um pouco para ser processada devido ao tempo de inicialização da hospedagem do backend.*
 
 ## Saiba Mais
 
